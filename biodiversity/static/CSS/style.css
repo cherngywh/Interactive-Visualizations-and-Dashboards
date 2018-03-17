@@ -1,0 +1,88 @@
+header {
+  background-color: lightsteelblue;
+  padding: 80px 0px 80px 0px;
+  text-align: center;
+}
+
+h1, h4, p, li {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #595959;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+#pie {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bubble {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -40px;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.text-portion {
+  margin-top: 50px;
+}
+
+.form-group {
+  padding: 10px;
+  text-align: center;
+  background-color: Lavender;
+  border-radius: 10px;
+}
+
+#metadata {
+  list-style-type: none;
+  max-width: 100%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: LemonChiffon;
+  border-radius: 10px;
+}
+
+#meta-info {
+  text-align: center;
+  background-color: LemonChiffon;
+}
+
+#description {
+  padding: 30px 0px 30px;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 60%;
+}
+
+footer {
+  margin-top: 20px;
+  height: 30px;
+  padding-top: 5px;
+  background-color: lightseagreen;
+  color: orange;
+  text-align: center;
+  margin-bottom: -16px;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.plot-container.plotly {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

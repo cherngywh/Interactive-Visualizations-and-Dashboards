@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belly Button Biodiversity</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <script src="{{ url_for('static', filename='js/plotly.js') }}"></script>
+        <header>
+            <h1>Belly Button Biodiversity Dashboard</h1>
+            <p>Use the interactive charts below to explore the dataset</p>
+        </header>
+        <div class="content row">
+                <div class="text-portion col-md-3">
+                    <div class="form-group">
+                        <h4>Select Sample:</h4>
+                        <select id="selDataset" onchange="getData(this.value)"></select>
+                    </div>
+                    <div id="metadata">
+                        <h4 id="meta-info">Sample Metadata</h4>
+                        <div id="description"></div>
+                    </div>
+                </div>
+                <div class="col-md-9" id="pie"></div>
+            </div>
+        <div class="col-md-12" id="bubble"></div>
+        <footer class="footer">
+            <p>"Created by Charlie / Berkeley Boot Camp"</p>
+        </footer> 
+    </div>
+</body>
+</html>
+
