@@ -18,11 +18,11 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 # The database URI
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get('DATABASE_URL', '') or "sqlite:///db/belly_button_biodiversity.sqlite"
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get('DATABASE_URL', '') or "sqlite:///biodiversity/db/belly_button_biodiversity.sqlite"
 
 db = SQLAlchemy(app)
 
-engine = create_engine("sqlite:///db/belly_button_biodiversity.sqlite")
+engine = create_engine("sqlite:///biodiversity/db/belly_button_biodiversity.sqlite")
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 
