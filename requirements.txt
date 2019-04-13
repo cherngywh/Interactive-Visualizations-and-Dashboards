@@ -2,7 +2,7 @@ appnope==0.1.0
 certifi==2018.1.18
 click==6.7
 decorator==4.1.2
-Flask==0.12.2
+flask>=0.12.3
 Flask-SQLAlchemy==2.3.2
 gunicorn==19.7.1
 ipython==6.2.1
